@@ -1,0 +1,149 @@
+/* Layout
+------------- */
+
+body {
+ font-family: Helvetica, Arial, sans-serif;
+ background: url(../img/background2.png);
+}
+
+nav.nav-espaco {
+    padding-right: 200px;
+    background: #C42F33;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+.efeito{
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.efeito:hover{
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+.carousel-img {
+    background-image: url(../img/banner-coxinha3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 420px;
+}
+
+.carousel-img1 {
+    background-image: url(../img/coxinha.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 420px;
+}
+
+.carousel-img2 {
+    background-image: url(../img/banner-coxinha2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Formatações
+------------*/
+h4 {
+    font-size: 1.8em;
+    font-family: 'Secular One', sans-serif;
+    color: rgb(61, 56, 56);
+}
+p {
+    font-size: 1em;
+    color: gray;
+}
+section a:link {
+    text-decoration: none;
+}
+
+.fundo {
+    padding: 20px;
+    background-color: white;
+    border-radius: 6%;
+    
+}
+.borda{
+    border-radius: 6%;
+}
+
+/* Slider
+------------- */
+.container-fluid {
+    padding: 0;
+}
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 30em;
+}
+
+/* Rodapé
+------------- */
+footer {
+    background-color: #C42F33;
+}
+footer p {
+    text-align: center;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    padding: 10px;
+    
+}
+
+footer a:link {
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgba(255,255,255,.5);
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	#mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: 15em;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: 20em;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: 20em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	#mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: 30em;
+    }
+    .caixa .container {
+        text-align: center;
+        height: 40em;
+        width: 40em;
+    }
+}
+ 
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	#mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: 40em;
+        
+    }
+    .caixa .container {
+        text-align: center;
+        height: 40em;
+        width: 40em;
+    }
+}
